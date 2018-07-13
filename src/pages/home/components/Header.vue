@@ -50,10 +50,6 @@
             text-align: center
             .select-city-arrow-down
                 margin-left: -.08rem
-
-        
-    
-
 </style>
 
 

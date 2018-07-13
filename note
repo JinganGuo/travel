@@ -9,4 +9,6 @@
     npm install stylus-loader --save
 
 二、主页实现
-1. 头部 header
+1. 头部 header --> 创建组件header
+2. 轮播图 --> 创建组件swiper
+    npm install vue-awesome-swiper@2.6.7 --save
