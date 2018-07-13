@@ -12,3 +12,13 @@
 1. 头部 header --> 创建组件header
 2. 轮播图 --> 创建组件swiper
     npm install vue-awesome-swiper@2.6.7 --save
+    存在一个问题：
+    图片在3G网络下加载过慢，需要先占位，否则会发生页面中部分内容移动，影响浏览效果
+    解决办法：
+        overflow: hidden
+        width: 100%
+        height: 0
+        padding-bottom: 26.66%    
+        background: #cccccc 
+    
+
