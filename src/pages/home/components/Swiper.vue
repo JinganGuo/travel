@@ -31,6 +31,16 @@
                 id: "002",
                 imgUrl: "http://img1.qunarzz.com/piao/fusion/1806/f5/ea83238744f31102.jpg_750x200_73b8477c.jpg",
                 imgAlt: "卡塔尔的讲述"
+            },
+            {
+                id: "003",
+                imgUrl: "http://img1.qunarzz.com/piao/fusion/1807/a1/41a802abfc4f0202.jpg_750x200_9f0cf69c.jpg",
+                imgAlt: "上海迪士尼乐园"
+            },
+            {
+                id: "004",
+                imgUrl: "http://img1.qunarzz.com/piao/fusion/1806/3c/c72a1ccd4d7b2202.jpg_750x200_b88bbab4.jpg",
+                imgAlt: "奇妙暑假在长隆"
             }
         ]
       }

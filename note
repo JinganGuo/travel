@@ -21,4 +21,9 @@
         padding-bottom: 26.66%    
         background: #cccccc 
     
+    合并分支：
+    git checkout master
+    git merge origin/index-swiper 
+    git push 
+    
 
