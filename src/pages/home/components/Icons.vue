@@ -103,8 +103,8 @@
 </script>
 
 <style lang="stylus" scoped>
-    @import '../../../assets/styles/varibles.styl';
-     @import '../../../assets/styles/mixins.styl';
+    @import '../../../assets/styles/varibles.styl'
+     @import '../../../assets/styles/mixins.styl'
 
     .icon-container >>> .swiper-pagination
         position: static
@@ -150,7 +150,7 @@
         .ad-ul
             background: $bgWhite
             display: flex
-            margin: .2rem 0
+            margin-top: .2rem 
             li
                 flex: 1
                 text-align: center
