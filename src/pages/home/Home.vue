@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="home">
         <home-header></home-header>
         <home-swiper></home-swiper>
         <home-icons></home-icons>
@@ -19,8 +19,9 @@
         }
     }
 </script>
-
+     
+       
 <style>
-
+   
 </style>
 

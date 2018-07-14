@@ -1,5 +1,6 @@
 <template>
     <div class="icon-container">
+        <!-- 图标导航栏 -->
         <swiper :options="swiperOption">
              <swiper-slide class="icon-page" v-for="(page, index) of pages" :key="index">
                 <div class="icon-item" v-for="item of page" :key="item.iconId">
@@ -9,6 +10,25 @@
              </swiper-slide>
              <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
+        <!-- 定位、玩水季 -->
+        <div class="position">
+            <div class="position-left">定位失败</div>
+            <div class="position-right">玩水季</div>
+        </div>
+
+        <!-- 广告 -->
+        <ul class="ad-ul">
+            <li class="ad-ul-left">
+                <a href="#">
+                    <img src="http://img1.qunarzz.com/piao/fusion/1806/29/30427c0e0658b502.png" alt="">
+                </a>
+            </li>
+            <li>
+                 <a href="#">
+                    <img src="http://img1.qunarzz.com/piao/fusion/1806/36/e89032c5f7714f02.png" alt="">
+                </a>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -88,7 +108,9 @@
 
     .icon-container >>> .swiper-pagination
         position: static
-        margin-top: .2rem
+        padding: .2rem 0
+    .icon-container >>> .swiper-container
+        background: $bgWhite
     .icon-container >>> .swiper-pagination-bullet-active
         background: rgba(0,175,190,.8) 
     .icon-container >>> .swiper-pagination-bullet
@@ -96,8 +118,10 @@
         width: 6px
 
     .icon-container
+        background: $bgGray
         .icon-page
             width: 100%
+            background: $bgWhite
             box-sizing: border-box
             padding-top: .2rem
             display: flex
@@ -113,5 +137,30 @@
                 p
                     padding-top: .1rem
                     ellipsis()
+        .position
+            display: flex
+            background: $bgWhite
+            border-top: 1px solid $bgGray
+            div
+                flex: 1
+                text-align: center
+                line-height: .98rem
+            .position-left
+                border-right: 1px solid $bgGray
+        .ad-ul
+            background: $bgWhite
+            display: flex
+            margin: .2rem 0
+            li
+                flex: 1
+                text-align: center
+                img
+                    width: 85%
+            .ad-ul-left
+                border-right: 1px solid $bgGray
+                
+
+                
+
 </style>
 
