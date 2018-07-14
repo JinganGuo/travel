@@ -4,8 +4,7 @@
         <home-swiper></home-swiper>
         <home-icons></home-icons>
         <home-hotlist></home-hotlist>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div>aa</div>
+        <home-favourate></home-favourate>
     </div>
 </template>
 
@@ -14,13 +13,15 @@
     import HomeSwiper from './components/Swiper'
     import HomeIcons from './components/Icons'
     import HomeHotlist from './components/Hotlist'
+    import HomeFavourate from './components/Favourate'
     export default {
         name: 'Home',
         components: {
             HomeHeader,
             HomeSwiper,
             HomeIcons,
-            HomeHotlist
+            HomeHotlist,
+            HomeFavourate
         }
     }
 </script>
