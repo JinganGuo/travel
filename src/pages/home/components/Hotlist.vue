@@ -6,7 +6,8 @@
                 <h3>本周热门榜单</h3>
             </div>
             <div class="header-right">
-                全部榜单
+                全部榜单 
+                <span class="iconfont">&#xe60e;</span>
             </div>
         </header>
         <ul class="hotlist-ul">
@@ -121,6 +122,7 @@
             align-items center
             .header-left
                 display flex
+                align-items center
                 img 
                     width: 15px
                     height: 15px
@@ -129,6 +131,9 @@
             .header-right
                  font-size .24rem
                  color #616161
+                 span 
+                    font-size .22rem
+                 
         .hotlist-ul 
             overflow-x scroll   
             white-space nowrap

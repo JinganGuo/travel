@@ -12,8 +12,14 @@
         </swiper>
         <!-- 定位、玩水季 -->
         <div class="position">
-            <div class="position-left">定位失败</div>
-            <div class="position-right">玩水季</div>
+            <div class="position-left">
+                <span class="iconfont">&#xe604;</span>
+                定位失败
+            </div>
+            <div class="position-right">
+                <span class="iconfont">&#xe689;</span>
+                玩水季
+            </div>
         </div>
 
         <!-- 广告 -->
@@ -154,13 +160,11 @@
             li
                 flex: 1
                 text-align: center
+                height 1.4rem 
                 img
-                    width: 85%
+                    // width: 100%
+                    height 100%
             .ad-ul-left
                 border-right: 1px solid $bgGray
-                
-
-                
-
 </style>
 

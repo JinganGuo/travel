@@ -11,6 +11,7 @@
             </li>
         </ul>
         <div class="introduce">
+            <span class="iconfont">&#xe71a;</span>
             <strong>  
                 票面价
             </strong>
@@ -91,6 +92,8 @@
             font-size .24rem
             padding .1rem .2rem
             color #616161
+            span 
+                font-size 12px
             strong 
                 font-weight bold
 </style>

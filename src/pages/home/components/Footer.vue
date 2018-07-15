@@ -2,19 +2,24 @@
     <div class="footer">
         <ul class="links">
             <li>
-                机票
+                <span class="iconfont">&#xe665;</span>
+                <span>机票</span>
             </li>
             <li>
-                酒店
+                 <span class="iconfont">&#xe61b;</span>
+                 <span>酒店</span>
+                
             </li>
             <li>
-                公寓
+                 <span class="iconfont">&#xe8e9;</span>
+                 <span>公寓</span>   
             </li>
             <li>
                 |
             </li>
             <li>
-                更多
+                 <span class="iconfont">&#xe63f;</span>
+                 <span>更多</span>
             </li>
         </ul>
         <ul class="self-links">
@@ -45,10 +50,12 @@
             display flex
             justify-content center
             li 
-                padding: 0.1rem .4rem
+                padding: 0.1rem .2rem
                 color #9e9e9e
                 font-size 12px
-                text-decoration underline
+                span
+                    &:last-child
+                        text-decoration underline
         .self-links 
             display flex
             padding: .3rem 
