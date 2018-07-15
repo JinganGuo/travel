@@ -11,10 +11,10 @@
             </div>
         </header>
         <ul class="hotlist-ul">
-             <li v-for="item of hotList" :key="item.id" >
+             <li v-for="(item, index) of hotList" :key="item.id">
                 <a class="hotlist-item">
-                    <div class="top-tip" v-if="item.showTopImage">
-                        <img :src="item.showTopImage">
+                    <div class="top-tip" v-if="item.showTipImage != ''">
+                        <img :src="topImg[index]">
                     </div>
                     <img class='list-item-img' :src="item.imgUrl" alt="">
                     <p>{{item.name}}</p>
@@ -26,9 +26,6 @@
                 </a>
             </li>
         </ul>
-                
-            
-         
     </div>
 </template>
 
@@ -96,14 +93,12 @@
             }
         },
         computed: {
-            showTop () {
-                for (let i = 0; i < 3; i++) {
-                     this.hotList[i].showTopImage = this.topImg[i];
+            showTip: function() {
+                for(let i = 0; i < 3; i++) {
+                    this.hotList[i].showTipImage = this.topImg[i];
                 }
-                return this.hotList
             }
         }
-          
     }
 </script>
 
