@@ -11,10 +11,10 @@
             </div>
         </header>
         <ul class="hotlist-ul">
-             <li v-for="(item, index) of hotList" :key="item.id">
+             <li v-for="(item, index) of hotlist" :key="item.id">
                 <a class="hotlist-item">
-                    <div class="top-tip" v-if="item.showTipImage != ''">
-                        <img :src="topImg[index]">
+                    <div class="top-tip" v-if="hottip[index]">
+                        <img :src="hottip[index]">
                     </div>
                     <img class='list-item-img' :src="item.imgUrl" alt="">
                     <p>{{item.name}}</p>
@@ -32,70 +32,14 @@
 <script>
     export default {
         name: "HomeHotlist",
-        data: function(){
-            return {
-                topImg: [
-                    "http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png",
-                    "http://img1.qunarzz.com/piao/fusion/1710/2d/36d0c4adaebbbc02.png",
-                    "http://img1.qunarzz.com/piao/fusion/1710/67/edc47ffef9e96b02.png"
-                ],
-                hotList: [{
-                    id: '001',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_150x150_06cb3e52.jpg',
-                    name: '故宫',
-                    price: 20
-                },{
-                    id: '002',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_150x150_2dec3e78.jpg',
-                    name: '八达岭长城',
-                    price: 25
-                },{
-                    id: '003',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/1704/d6/d62a708bc69472f5a3.img.jpg_150x150_54ba6c62.jpg',
-                    name: '十渡聚龙湾玻璃栈道',
-                    price: 35
-                },{
-                    id: '004',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_150x150_8a63d940.jpg',
-                    name: '水立方',
-                    price: 14
-                },{
-                    id: '005',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/201405/30/63494597d8a8346abd77cc9e1cd2ee79.jpg_150x150_7037ca72.jpg',
-                    name: '定陵',
-                    price: 50
-                },{
-                    id: '006',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_150x150_27594131.jpg',
-                    name: '北京欢乐谷',
-                    price: 49
-                },{
-                    id: '007',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_150x150_2747e538.jpg',
-                    name: '颐和园',
-                    price: 48
-                },{
-                    id: '008',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/c0/0ddded36771ed10c9e03eb64794610cb.water.jpg_150x150_69bf7d53.jpg',
-                    name: '仙栖洞',
-                    price: 38
-                },{
-                    id: '009',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/201306/13/bdf22f69fab0ee4ec8d65eac.jpg_150x150_35b4b15f.jpg',
-                    name: '八达岭长城缆车',
-                    price: 155
-                },{
-                    id: '010',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/1801/bf/bfd58fbb6aec7a15a3.img.jpg_150x150_7040715c.jpg',
-                    name: '故宫礼物',
-                    price: 9
-                }]
-            }
+        props: {
+            hotlist: Array,
+            hottip: Array
         },
         computed: {
             showTip: function() {
                 for(let i = 0; i < 3; i++) {
-                    this.hotList[i].showTipImage = this.topImg[i];
+                    this.hotList[i].showTipImage = this.hottip[i];
                 }
             }
         }

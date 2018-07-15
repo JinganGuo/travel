@@ -5,7 +5,7 @@
              <h3>猜你喜欢</h3>
         </header>
         <ul>
-            <li v-for="item of favourateList" :key="item.id">
+            <li v-for="item of favouratelist" :key="item.id">
                 <a href="#" class="favourate-item">
                     <div class="left-img">
                         <div class="img-tip">
@@ -38,67 +38,9 @@
 <script>
     export default {
         name: "HomeFavourate",
-        data: function() {
-            return {
-                favourateList: [
-                    {
-                        id: '001',
-                        imgUrl: 'http://img1.qunarzz.com/sight/p0/1609/7a/7ae8ee7831836095a3.water.jpg_200x200_36727f69.jpg',
-                        title: '金海湖风景区',
-                        tip: '明日可定',
-                        comment: 5200,
-                        price: 18.8,
-                        place: '平谷区'
-                    },
-                    {
-                        id: '002',
-                        imgUrl: 'http://img1.qunarzz.com/sight/p0/1803/12/126471e0966aca5ba3.img.jpg_200x200_f1286016.jpg',
-                        title: '北京国际鲜花港',
-                        tip: '明日可定',
-                        comment: 1916,
-                        price: 24.9,
-                        place: '顺义区'
-                    },
-                      {
-                        id: '003',
-                        imgUrl: 'http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_200x200_fdc48968.jpg',
-                        title: '水立方',
-                        tip: '明日可定',
-                        comment: 3660,
-                        price: 14,
-                        place: '奥林匹克国家公园'
-                    },
-                    {
-                        id: '004',
-                        imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_200x200_7690e4cd.jpg',
-                        title: '北京欢乐谷',
-                        tip: '明日可定',
-                        comment: 54635,
-                        price: 49,
-                        place: '朝阳区'
-                    },
-                      {
-                        id: '005',
-                        imgUrl: 'http://img1.qunarzz.com/sight/p0/1501/c2/c212a154649088c1.water.jpg_200x200_69d1df69.jpg',
-                        title: '水立方嬉水乐园',
-                        tip: '明日可定',
-                        comment: 2603,
-                        price: 111,
-                        place: '丰台区'
-                    },
-                    {
-                        id: '006',
-                        imgUrl: 'http://img1.qunarzz.com/sight/p0/201405/23/0265195fc4b7913a758674357c3cc8f6.jpg_200x200_b58ea00b.jpg',
-                        title: '北京欢乐水魔方',
-                        tip: '明日可定',
-                        comment: 1546,
-                        price: 241,
-                        place: '水立方'
-                    }   
-                ]
-            }
+        props: {
+            favouratelist: Array
         }
-      
     }
 </script>
 
