@@ -26,12 +26,12 @@
         <ul class="ad-ul">
             <li class="ad-ul-left">
                 <a href="#">
-                    <img src="http://img1.qunarzz.com/piao/fusion/1806/29/30427c0e0658b502.png" alt="">
+                    <img src="@/assets/image/ad_01.png" alt="">
                 </a>
             </li>
             <li>
                  <a href="#">
-                    <img src="http://img1.qunarzz.com/piao/fusion/1806/36/e89032c5f7714f02.png" alt="">
+                    <img src="@/assets/image/ad_02.png" alt="">
                 </a>
             </li>
         </ul>
