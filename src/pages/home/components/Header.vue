@@ -7,10 +7,13 @@
              <span class="iconfont">&#xe632;</span>
             输入城市/景点/游玩主题
         </div>
-        <div class="header-right">
-            <span>{{this.city}}</span>
-            <span class="iconfont select-city-arrow-down">&#xe60c;</span>
-        </div>
+        <router-link to="City">
+            <div class="header-right">
+                <span>{{this.city}}</span>
+                <span class="iconfont select-city-arrow-down">&#xe60c;</span>
+            </div>
+        </router-link>
+       
     </div>
 </template>
 
@@ -30,6 +33,8 @@
         line-height: .86rem
         background: $bgColor 
         color: #fff
+        a 
+            color: #ffffff
         .header-left
             width: .64rem
             float: left 
