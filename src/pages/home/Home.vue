@@ -60,7 +60,6 @@
                     this.weekendlist = data.weekendList
                 }
             }
-
         },
         mounted () {
             this.getHomeInfo()
