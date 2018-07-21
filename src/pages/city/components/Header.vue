@@ -1,14 +1,13 @@
 <template>
     <div class="header">
-        <router-link to="/">
-            <div class="header-left">
-            <span class="iconfont back-icon">&#xe624;</span>
-            </div>
-        </router-link>
-
-        <div class="header-title">
-            城市选择
-        </div>
+              城市选择
+            <router-link to="/">
+                <span class="iconfont back-icon">&#xe624;</span>
+            </router-link>
+            
+       
+         
+    
     </div>
 </template>
 
@@ -22,22 +21,20 @@
 <style lang="stylus" scoped>
      @import '../../../assets/styles/varibles.styl';
     .header
-        
         line-height: .86rem
         background: $bgColor 
         color: #fff
+        text-align center
+        position relative
+        font-size .32rem
         a 
             color: #ffffff
-        .header-left
-            width: .64rem
-            float: left 
-            text-align: center
-            .back-icon
-                display: block
-                font-size: .38rem
-        .header-title 
-            text-align center
-            font-size .34rem
+            span 
+                position absolute 
+                top: 0 
+                left .1 rem
+        
+          
 </style>
 
 
