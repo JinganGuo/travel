@@ -11,6 +11,7 @@
             cities: Object
         }
     }
+    
 </script>
 
 <style lang="stylus" scoped>
