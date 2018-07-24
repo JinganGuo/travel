@@ -5,7 +5,13 @@
              <h3>猜你喜欢</h3>
         </header>
         <ul>
-            <li v-for="item of favouratelist" :key="item.id">
+          
+            <router-link 
+                tag="li" 
+                v-for="item of favouratelist" 
+                :key="item.id" 
+                :to="'/detail/' + item.id"
+            >
                 <a href="#" class="favourate-item">
                     <div class="left-img">
                         <div class="img-tip">
@@ -27,7 +33,7 @@
                         </p>
                     </div>
                 </a>
-            </li>
+            </router-link>
         </ul>
         <a href="#" class="view-all">
             查看所有产品
