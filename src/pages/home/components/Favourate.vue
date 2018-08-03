@@ -6,11 +6,9 @@
         </header>
         <ul>
           
-            <router-link 
-                tag="li" 
+            <li 
                 v-for="item of favouratelist" 
                 :key="item.id" 
-                :to="'/detail/' + item.id"
             >
                 <a href="#" class="favourate-item">
                     <div class="left-img">
@@ -33,7 +31,7 @@
                         </p>
                     </div>
                 </a>
-            </router-link>
+            </li>
         </ul>
         <a href="#" class="view-all">
             查看所有产品

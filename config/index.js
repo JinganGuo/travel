@@ -9,10 +9,10 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/travel',
     proxyTable: {
       '/api' : {
-        target: 'http://localhost:8080',
+        target: 'http://www.guojingan.cn',
         pathRewrite: {
           '^/api': '/static/mock'
         }

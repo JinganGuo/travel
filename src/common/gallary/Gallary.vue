@@ -1,15 +1,6 @@
 <template>
     <div class="container">
-        <div class="wrapper">
-            <swiper>
-            <!-- slides -->
-            <swiper-slide>
-                <img class="swiper-img"  src="" >
-            </swiper-slide>
-            <!-- Optional controls -->
-            <!-- <div class="swiper-pagination" slot="pagination"></div>
-            </swiper> -->
-        </div>
+        
     </div>
 </template>
 
